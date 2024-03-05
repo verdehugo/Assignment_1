@@ -19,18 +19,19 @@ typedef struct{
 	size_t max_elem;
 	size_t elem_size;
 	size_t current_size;
+	
 } DoublyLinkedList;
 
 void MyDLLInit(DoublyLinkedList *dll, size_t max_elem, size_t elem_size);
 
-int MyDLLInsert(DoubleLinkedList* dll, uint16_t key, unsigned char*data);	
+void MyDLLInsert(DoubleLinkedList* dll, uint16_t key, unsigned char*data);	
 
-int MyDLLRemove(DoubleLinkedList* dll, uint16_t key);
+void MyDLLRemove(DoubleLinkedList* dll, uint16_t key);
 
-int MyDLLFind(DoubleLinkedList* dll, uint16_t key, unsigned char* result);
+void MyDLLFind(DoubleLinkedList* dll, uint16_t key, unsigned char* result);
 
-int MyDLLFindNext(DoublyLinkedList* dll, uint16_t key, unsigned char*result);
+void MyDLLFindNext(DoublyLinkedList* dll, uint16_t key, unsigned char*result);
 
-int MyDLLFindPrevious(DoublyLinkedList* dll, uint16_t key, unsigned char*result);
+void MyDLLFindPrevious(DoublyLinkedList* dll, uint16_t key, unsigned char*result);
 
-voud MyDLLCleanup(DoubleLinkedList* dll);
+void MyDLLCleanup(DoubleLinkedList* dll);
